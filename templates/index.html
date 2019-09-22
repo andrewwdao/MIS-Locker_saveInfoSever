@@ -1,19 +1,55 @@
 <!DOCTYPE html>
-<head>
-  <title>{{server_title}}</title>
-  <link rel="stylesheet" href="../static/style/style.css">
-  <link rel="stylesheet" href="../static/style/normalize.css">
-</head>
-<body>
-  <img src="../static/img/MIS.png"> <!-- logo for the system -->
-  <h1>{{server_title}}</h1>
-  <p>{{server_func}}</p>
-  <input type="name" placeholder="Your full Name">
-  <input type="mssv" placeholder="Your ID (MSSV)"><br /><br />
-  <button>Save</button>
-  <script>
-    $("button").on("click",function(){
-      alert("clicked!")
-    });
-  </script>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="stylesheet" href="../static/style/style.css">
+    <link rel="stylesheet" href="../static/style/normalize.css">
+    <script src="../static/js/code.js"></script>
+    <title>{{server_title}}</title>
+  </head>
+  <body>
+    <div id="app">
+      <div id="avatar">
+        <img src="../static/img/MIS.png"> <!-- logo for the system -->
+        <h1>{{server_title}}</h1>
+        <p>{{server_func}}</p>
+      </div>
+      <div id=userInfos>
+        <section>
+          <input type="name" placeholder="Your full Name">
+          <input type="mssv" placeholder="Your ID (MSSV)">   
+        </section>
+        <div class="button">
+          <input id="save" type="button" value="Save" data-connect="manual" />
+				  <input id="cancel" type="button" value="Cancel"/>
+        </div>
+      </div>
+      <div id="pwrdby">
+        <br /><strong><a id="acredits" href="#"> &copy; 2019 Minh-An Dao.</a></strong><br />
+        <strong>Maker Innovation Space Can Tho</strong>
+      </div>
+    </div>
+    <div id="credits">
+      <header>
+        <h1>About</h1>
+      </header>
+      <section>
+        <p id="main-cre"><strong>&copy; 2019 Minh-An Dao</strong></p>
+        <p>
+        This is a part of an undergraduate thesis. Created for Maker Innovation Space - Can Tho University, Vietnam<br />
+        Credited libraries:<br />
+         - Esp32 wifi manager, &copy;  2017-2019, Tony Pottier.<br />
+         - SpinKit, &copy;  2015, Tobias Ahlin.<br />
+         - jQuery, The jQuery Foundation.<br />
+         - cJSON, &copy; 2009-2017, Dave Gamble and cJSON contributors.<br />
+         All Licensed under the MIT License.
+        </p>
+      </section>
+      <div class="buttons">
+        <input id="ok-credits" type="button" value="OK" class="ctr" />
+      </div>
+    </div>
+  </body>
+</html>
