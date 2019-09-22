@@ -15,7 +15,8 @@ def hello():
 #   now = datetime.datetime.now()
 #   timeString = now.strftime("%Y-%m-%d %H:%M")
    templateData = {
-      'title' : 'MIS Locker System',
+      'server_title' : 'MIS Locker System',
+      'server_func' : 'Add Guest ID'
 #      'time': timeString
       }
    return render_template('index.html', **templateData)

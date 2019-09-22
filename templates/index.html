@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <head>
-  <title>{{title}}</title>
-  <link rel="stylesheet" href="../static/style.css">
-  <link rel="stylesheet" href="../static/normalize.css">
+  <title>{{server_title}}</title>
+  <link rel="stylesheet" href="../static/style/style.css">
+  <link rel="stylesheet" href="../static/style/normalize.css">
 </head>
 <body>
-  <img src="../static/MIS.png"> <!-- logo for the system -->
-  <h1>{{title}}</h1>
-  <p>Add Guest ID</p>
+  <img src="../static/img/MIS.png"> <!-- logo for the system -->
+  <h1>{{server_title}}</h1>
+  <p>{{server_func}}</p>
   <input type="name" placeholder="Your full Name">
-  <input type="mssv" placeholder="Your ID (MSSV)"><br>
+  <input type="mssv" placeholder="Your ID (MSSV)"><br /><br />
   <button>Save</button>
   <script>
     $("button").on("click",function(){
