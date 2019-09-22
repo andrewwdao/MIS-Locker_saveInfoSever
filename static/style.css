@@ -1,0 +1,42 @@
+img {
+    margin: 30px 0px 0px 0px;
+    background:white;
+    border: 3px solid black;
+    border-radius: 180px;
+}
+body {
+    text-align: center;
+    background: url("../pictures/ctu.png"); /*background picture*/
+    background-size: cover;
+    background-position: center;
+    color: Black;
+    font-family: helvetica;
+}
+h1 {
+    font-size:35px;
+}
+p {
+    font-size:22px;
+}
+input {
+    border: 5;
+    padding: 10px;
+    margin:10px;
+    font-size: 22px;
+}
+button {
+    padding:10px 80px;
+    margin:20px;
+    font-size:22px;
+    background: gray;
+    color: white;
+}
+@media (max-width: 500px) {
+    h1 {
+		font-size:36px;
+    }
+    li {
+		display:block;
+        padding:5px;
+    }
+}
