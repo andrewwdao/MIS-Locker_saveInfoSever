@@ -1,15 +1,15 @@
 img {
     margin: 30px 0px 0px 0px;
-    background:white;
-    border: 3px solid black;
+    background:#fff;
+    border: 3px #000;
     border-radius: 180px;
 }
 body {
     text-align: center;
-    background: url("../pictures/ctu.png"); /*background picture*/
+    background: url("../static/ctu.png"); /*background picture*/
     background-size: cover;
     background-position: center;
-    color: Black;
+    color: #000;
     font-family: helvetica;
 }
 h1 {
@@ -28,7 +28,7 @@ button {
     padding:10px 80px;
     margin:20px;
     font-size:22px;
-    background: gray;
+    background: #777;
     color: white;
 }
 @media (max-width: 500px) {
