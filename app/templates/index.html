@@ -6,7 +6,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <link rel="stylesheet" href="../static/style/style.css">
     <link rel="stylesheet" href="../static/style/normalize.css">
-    <script src="../static/js/code.js"></script>
+    <!-- <script src="../static/js/code.js"></script> -->
     <title>{{server_title}}</title>
   </head>
   <body>
@@ -18,14 +18,26 @@
         <p>What the fuck?</p>
       </div>
       <div id="userInfos">
-        <section id="realInfo">
-          <input id="but.name" type="text" placeholder="Your full Name">
-          <input id="but.mssv" type="text" placeholder="Your ID (MSSV)">   
-        </section>
-        <div class="button">
-          <input id="but.save"   type="button" value="Save" data-connect="manual" />
-				  <input id="but.cancel" type="button" value="Cancel"/>
-        </div>
+        <form action="" method="post" novalidate>
+          {{ form.hidden_tag() }}
+          <section id="realInfo">
+            <p>
+              {{ form.name.label }}<br>
+              {{ form.name(size=32) }}
+            </p>
+            <p>
+              {{ form.mssv.label }}<br>
+              {{ form.mssv(size=32) }}
+            </p>
+            <!-- <input id="but.name" type="text" placeholder="Your full Name">
+            <input id="but.mssv" type="text" placeholder="Your ID (MSSV)">    -->
+          </section>
+          <div class="button">
+            <p>{{ form.save() }}</p>
+            <!-- <input id="but.save"   type="button" value="Save" data-connect="manual" />
+				    <input id="but.cancel" type="button" value="Cancel"/> -->
+          </div>
+        </form>
       </div>
       <div id="pwrdby">
         <strong><br /><a id="acredits" href="#"> &copy; 2019 Minh-An Dao.</a></strong><br />
