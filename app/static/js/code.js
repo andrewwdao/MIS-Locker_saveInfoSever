@@ -16,4 +16,4 @@ $(document).ready(function(){
 		$( "#app" ).slideUp( "fast", function() {});
 		$( "#credits" ).slideDown( "fast", function() {});
 	});
-}
+})
