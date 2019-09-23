@@ -1,5 +1,6 @@
 body {
-    background: url("../img/ctu.png"); /*background picture*/
+    /* background: url("../img/ctu.png"); background picture */
+    background: #fff;
     background-size: cover;
     background-position: center;
     width: 100%;
