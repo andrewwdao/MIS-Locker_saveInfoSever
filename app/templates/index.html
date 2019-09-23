@@ -15,19 +15,18 @@
         <img src="../static/img/MIS.png"> <!-- logo for the system -->
         <h1>{{server_title}}</h1>
         <p>{{server_func}}</p>
-        <p>What the fuck?</p>
       </div>
       <div id="userInfos">
         <form action="" method="post" novalidate>
           {{ form.hidden_tag() }}
           <section id="realInfo">
             <p>
-              {{ form.name.label }}<br>
-              {{ form.name(size=32) }}
+              <!-- {{ form.name.label }}<br> -->
+              {{ form.name(size=32,placeholder=form.name.label) }}
             </p>
             <p>
-              {{ form.mssv.label }}<br>
-              {{ form.mssv(size=32) }}
+              <!-- {{ form.mssv.label }}<br> -->
+              {{ form.mssv(size=32,placeholder=form.mssv.label) }}
             </p>
             <!-- <input id="but.name" type="text" placeholder="Your full Name">
             <input id="but.mssv" type="text" placeholder="Your ID (MSSV)">    -->
