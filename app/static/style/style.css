@@ -23,26 +23,30 @@ p {
     font-size:22px;
 }
 input {
-    border: 5px #000;
-    padding: 20px 30px 20px 10px;
-    margin:40px;
+    border: rgba(0,0,0,0);
     font-size: 30px;
+}
+#realInfo {
+    margin: 10px;
+}
+input[type="text"] {
+    padding: 20px 30px 20px 10px;
+    margin: 10px;
 }
 input[type="button"] {
     padding:20px 80px;
     background: #888;
     color: #fff;
-}
-#ok-credit {
-    align-self: center;
+    margin: 10px;
 }
 #pwrdby {
     font-size:10px;
 }
 #credits {
     text-align: left;
-    display: none;
+    /* display: none; */
 }
+
 input:focus,
 select:focus,
 textarea:focus,
@@ -52,9 +56,5 @@ button:focus {
 @media (max-width: 500px) {
     h1 {
 		font-size:36px;
-    }
-    li {
-		display:block;
-        padding:5px;
     }
 }

@@ -16,18 +16,18 @@
         <h1>{{server_title}}</h1>
         <p>{{server_func}}</p>
       </div>
-      <div id=userInfos>
-        <section>
-          <input type="name" placeholder="Your full Name">
-          <input type="mssv" placeholder="Your ID (MSSV)">   
+      <div id="userInfos">
+        <section id="realInfo">
+          <input id="but.name" type="text" placeholder="Your full Name">
+          <input id="but.mssv" type="text" placeholder="Your ID (MSSV)">   
         </section>
         <div class="button">
-          <input id="save" type="button" value="Save" data-connect="manual" />
-				  <input id="cancel" type="button" value="Cancel"/>
+          <input id="but.save"   type="button" value="Save" data-connect="manual" />
+				  <input id="but.cancel" type="button" value="Cancel"/>
         </div>
       </div>
       <div id="pwrdby">
-        <br /><strong><a id="acredits" href="#"> &copy; 2019 Minh-An Dao.</a></strong><br />
+        <strong><br /><a id="acredits" href="#"> &copy; 2019 Minh-An Dao.</a></strong><br />
         <strong>Maker Innovation Space Can Tho</strong>
       </div>
     </div>
@@ -36,7 +36,9 @@
         <h1>About</h1>
       </header>
       <section>
-        <p id="main-cre"><strong>&copy; 2019 Minh-An Dao</strong></p>
+        <p id="main-cre">
+          <strong>&copy; 2019 Minh-An Dao</strong>
+        </p>
         <p>
         This is a part of an undergraduate thesis. Created for Maker Innovation Space - Can Tho University, Vietnam<br />
         Credited libraries:<br />
@@ -47,8 +49,8 @@
          All Licensed under the MIT License.
         </p>
       </section>
-      <div class="buttons">
-        <input id="ok-credits" type="button" value="OK" class="ctr" />
+      <div class="button">
+        <input id="but.ok" type="button" value="OK" class="ctr" />
       </div>
     </div>
   </body>
